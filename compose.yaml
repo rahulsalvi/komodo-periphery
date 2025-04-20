@@ -1,0 +1,20 @@
+# vim: ft=yaml.docker-compose
+services:
+  periphery:
+    image: ghcr.io/mbecker20/periphery:latest
+    labels:
+      komodo.skip:
+    restart: unless-stopped
+    ports:
+      - 8120:8120
+    environment:
+      PERIPHERY_SSL_ENABLED: false
+      PERIPHERY_PASSKEYS_FILE: /etc/komodo/passkey
+      PERIPHERY_INCLUDE_DISK_MOUNTS: /etc/hostname
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /proc:/proc
+      - /etc/komodo:/etc/komodo
+networks:
+  default:
+    enable_ipv6: true
