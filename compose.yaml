@@ -1,7 +1,7 @@
 # vim: ft=yaml.docker-compose
 services:
   periphery:
-    image: ghcr.io/mbecker20/periphery:latest
+    image: ghcr.io/moghtech/komodo-periphery:latest
     labels:
       komodo.skip:
     restart: unless-stopped
