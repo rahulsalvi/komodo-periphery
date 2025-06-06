@@ -1,4 +1,5 @@
 # vim: ft=yaml.docker-compose
+name: periphery
 services:
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:latest
