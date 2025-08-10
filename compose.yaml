@@ -6,8 +6,7 @@ services:
     labels:
       komodo.skip:
     restart: unless-stopped
-    ports:
-      - 8120:8120
+    network_mode: host
     environment:
       PERIPHERY_SSL_ENABLED: false
       PERIPHERY_PASSKEYS_FILE: /etc/komodo/passkey
@@ -16,6 +15,3 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc:/proc
       - /etc/komodo:/etc/komodo
-networks:
-  default:
-    enable_ipv6: true
