@@ -2,7 +2,7 @@
 name: periphery
 services:
   periphery:
-    image: ghcr.io/moghtech/komodo-periphery:latest
+    image: ghcr.io/rahulsalvi/komodo-periphery:latest
     labels:
       komodo.skip:
     restart: unless-stopped

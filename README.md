@@ -23,3 +23,10 @@ sudo docker compose pull
 sudo docker compose up -d
 sudo docker prune
 ```
+
+## Licenses
+
+- [LICENSE](LICENSE)
+- [komodo](https://github.com/moghtech/komodo/blob/main/LICENSE)
+- [get-authkey](https://github.com/tailscale/tailscale/blob/main/LICENSE)
+- [infisical](https://github.com/Infisical/infisical/blob/main/LICENSE)
