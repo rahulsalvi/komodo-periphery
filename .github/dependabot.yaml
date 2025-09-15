@@ -5,11 +5,17 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - rahulsalvi
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - rahulsalvi
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    assignees:
+      - rahulsalvi
