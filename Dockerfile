@@ -4,7 +4,7 @@ RUN go install tailscale.com/cmd/get-authkey@latest
 
 FROM infisical/cli:0.42.6 AS infisical
 
-FROM ghcr.io/moghtech/komodo-periphery:1.19.4
+FROM ghcr.io/moghtech/komodo-periphery:1.19.5
 
 RUN apt-get update \
   && apt-get install -y ca-certificates \
