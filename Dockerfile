@@ -2,7 +2,7 @@ FROM golang:1.25.4-alpine3.22 AS get-authkey
 
 RUN go install tailscale.com/cmd/get-authkey@latest
 
-FROM infisical/cli:0.43.22 AS infisical
+FROM infisical/cli:0.43.26 AS infisical
 
 FROM ghcr.io/moghtech/komodo-periphery:1.19.5
 
