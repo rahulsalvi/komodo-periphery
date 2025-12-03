@@ -1,4 +1,4 @@
-FROM golang:1.25.4-alpine3.22 AS get-authkey
+FROM golang:1.25.5-alpine3.22 AS get-authkey
 
 RUN go install tailscale.com/cmd/get-authkey@latest
 
